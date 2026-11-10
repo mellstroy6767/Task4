@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Задание 4</title>
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="site-header bg-primary text-white">
+        <div class="container py-3">
+            <div class="row align-items-center gy-3">
+                <div class="col-auto">
+                    <div class="logo d-flex align-items-center justify-content-center rounded-circle bg-dark fw-bold fs-4" role="img" aria-label="Логотип сайта: Задание 4">З4</div>
+                </div>
+
+                <div class="col-12 col-md order-2 order-md-1">
+                    <nav aria-label="Основное меню">
+                        <ul class="menu list-unstyled d-flex flex-column flex-md-row flex-wrap gap-2 gap-md-4 mb-0">
+                            <li><a class="link-light d-block py-2 px-2 py-md-0 px-md-0" href="#links">Ссылки</a></li>
+                            <li><a class="link-light d-block py-2 px-2 py-md-0 px-md-0" href="#schedule">Таблица</a></li>
+                            <li><a class="link-light d-block py-2 px-2 py-md-0 px-md-0" href="#questionnaire">Форма</a></li>
+                        </ul>
+                    </nav>
+                </div>
+
+                <div class="col col-md-auto order-1 order-md-2">
+                    <span class="fw-bold fs-5">Задание 4</span>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="container py-4">
+        <h1 id="top" class="mb-4">Задание 4</h1>
+
+        <div class="row g-4">
+            <section id="links" class="links-section col-12 col-md-4 order-2 order-md-1" aria-labelledby="links-title">
+                <div class="section-card h-100 p-3 border rounded">
+                    <h2 id="links-title" class="h3 mb-3">Список гиперссылок</h2>
+
+                    <p><a href="https://kubsu.ru">Гиперссылка на сайт университета</a></p>
+                    <p><a href="https://kubsu.ru">HTTPS включительно</a></p>
+
+                    <figure class="my-3">
+                        <img class="img-fluid d-block rounded" src="images/1.jpg" alt="Главный вход Кубанского государственного университета" width="547" height="365">
+                        <figcaption class="figure-caption mt-2">Кубанский государственный университет</figcaption>
+                    </figure>
+
+                    <p><a href="pages/inner.html">Ссылка на внутреннюю страницу</a></p>
+                    <p><a href="index.html">Ссылка на главную страницу</a></p>
+                    <p><a href="#top">Ссылка на id (вверх)</a></p>
+                    <p><a href="search.html?q=kubsu&amp;page=2&amp;sort=name">Ссылка с тремя параметрами</a></p>
+                    <p><a href="../../index.html">Страница на 2 каталога выше</a></p>
+
+                    <p>Я учусь в Кубанском государственном университете на первом курсе.</p>
+
+                    <h3 class="h4 mt-4">Фотография университета</h3>
+                    <figure class="my-3">
+                        <a href="https://kubsu.ru">
+                            <img class="img-fluid d-block rounded" src="images/2.jpg" alt="Фасад Кубанского государственного университета и цветы" width="1280" height="853">
+                        </a>
+                        <figcaption class="figure-caption mt-2">Кубанский государственный университет</figcaption>
+                    </figure>
+
+                    <p><a href="">Пустой href</a></p>
+                    <p><a href="https://kubsu.ru">https://kubsu.ru</a></p>
+                    <p><a href="https://kubsu.ru" rel="nofollow">Ссылка, запрещённая для поисковиков</a></p>
+                    <p><a href="secret.html">Страница, запрещённая для индексации</a></p>
+
+                    <ol class="mb-3">
+                        <li><a href="https://kubsu.ru">КубГУ</a></li>
+                        <li><a href="https://google.com">Google</a></li>
+                        <li><a href="about.html">About</a></li>
+                    </ol>
+
+                    <p class="mb-0"><a href="ftp://user:pass@files.kubsu.ru/">FTP-ссылка с авторизацией</a></p>
+                </div>
+            </section>
+
+            <section id="schedule" class="table-section col-12 col-md-8 order-1 order-md-2" aria-labelledby="schedule-title">
+                <div class="section-card h-100 p-3 border rounded">
+                    <h2 id="schedule-title" class="h3 mb-3">Расписание занятий</h2>
+                    <div class="table-responsive">
+                        <table class="table table-bordered table-striped align-middle mb-0">
+                            <thead class="table-primary">
+                                <tr>
+                                    <th scope="col">Предмет</th>
+                                    <th scope="col">Преподаватель</th>
+                                    <th scope="col">Аудитория</th>
+                                    <th scope="col">Оценка</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Программирование</td>
+                                    <td>Михайличенко</td>
+                                    <td>107</td>
+                                    <td>5</td>
+                                </tr>
+                                <tr>
+                                    <td>Мат.анализ</td>
+                                    <td>Силинская С.М</td>
+                                    <td>129</td>
+                                    <td>4</td>
+                                </tr>
+                                <tr>
+                                    <td>Физика</td>
+                                    <td>Бурим А.А</td>
+                                    <td>103</td>
+                                    <td>4</td>
+                                </tr>
+                                <tr>
+                                    <td>Английский</td>
+                                    <td>Баклагова</td>
+                                    <td>344</td>
+                                    <td>5</td>
+                                </tr>
+                                <tr>
+                                    <td>Дифференциальные уравнения</td>
+                                    <td>Чубырь Н.О</td>
+                                    <td>128</td>
+                                    <td>3</td>
+                                </tr>
+                                <tr>
+                                    <td colspan="3">Всего дисциплин</td>
+                                    <td>5</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </section>
+
+            <section id="questionnaire" class="form-section col-12 order-3" aria-labelledby="questionnaire-title">
+                <div class="section-card p-3 border rounded">
+                    <h2 id="questionnaire-title" class="h3 mb-3">Анкета</h2>
+                    <form action="#" method="post">
+                        <div class="row g-3">
+                            <div class="col-12 col-md-6">
+                                <label class="form-label" for="fio">ФИО</label>
+                                <input class="form-control" type="text" id="fio" name="fio">
+                            </div>
+                            <div class="col-12 col-md-6">
+                                <label class="form-label" for="phone">Телефон</label>
+                                <input class="form-control" type="tel" id="phone" name="phone">
+                            </div>
+                            <div class="col-12 col-md-6">
+                                <label class="form-label" for="email">E-mail</label>
+                                <input class="form-control" type="email" id="email" name="email">
+                            </div>
+                            <div class="col-12 col-md-6">
+                                <label class="form-label" for="birth">Дата рождения</label>
+                                <input class="form-control" type="date" id="birth" name="birth">
+                            </div>
+                            <fieldset class="col-12">
+                                <legend class="col-form-label pt-0">Пол</legend>
+                                <div class="d-flex flex-wrap gap-3">
+                                    <label class="form-check">
+                                        <input class="form-check-input" type="radio" name="sex" value="m">
+                                        <span class="form-check-label">мужской</span>
+                                    </label>
+                                    <label class="form-check">
+                                        <input class="form-check-input" type="radio" name="sex" value="f">
+                                        <span class="form-check-label">женский</span>
+                                    </label>
+                                </div>
+                            </fieldset>
+                            <div class="col-12 col-md-6">
+                                <label class="form-label" for="lang">Любимый язык программирования</label>
+                                <select class="form-select" id="lang" name="lang[]" multiple>
+                                    <option value="pascal">Pascal</option>
+                                    <option value="c">C</option>
+                                    <option value="cpp">C++</option>
+                                    <option value="js">JavaScript</option>
+                                </select>
+                            </div>
+                            <div class="col-12 col-md-6">
+                                <label class="form-label" for="bio">Биография</label>
+                                <textarea class="form-control" id="bio" name="bio" rows="5"></textarea>
+                            </div>
+                            <div class="col-12">
+                                <label class="form-check">
+                                    <input class="form-check-input" type="checkbox" name="contract">
+                                    <span class="form-check-label">С контрактом ознакомлен(а)</span>
+                                </label>
+                            </div>
+                            <div class="col-12">
+                                <input class="btn btn-primary" type="submit" value="Сохранить">
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer class="site-footer bg-primary text-white py-3">
+        <div class="container text-center">
+            <p class="mb-0">&copy; ПИ22</p>
+        </div>
+    </footer>
+</body>
+</html>
